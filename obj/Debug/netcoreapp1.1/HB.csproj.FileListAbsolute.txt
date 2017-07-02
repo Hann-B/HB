@@ -7,3 +7,12 @@ c:\users\hanna\documents\visual studio 2017\Projects\HB\HB\obj\Debug\netcoreapp1
 c:\users\hanna\documents\visual studio 2017\Projects\HB\HB\obj\Debug\netcoreapp1.1\HB.AssemblyInfo.cs
 c:\users\hanna\documents\visual studio 2017\Projects\HB\HB\obj\Debug\netcoreapp1.1\HB.dll
 c:\users\hanna\documents\visual studio 2017\Projects\HB\HB\obj\Debug\netcoreapp1.1\HB.pdb
+C:\Users\markt\Documents\github\HB\bin\Debug\netcoreapp1.1\HB.deps.json
+C:\Users\markt\Documents\github\HB\bin\Debug\netcoreapp1.1\HB.runtimeconfig.json
+C:\Users\markt\Documents\github\HB\bin\Debug\netcoreapp1.1\HB.runtimeconfig.dev.json
+C:\Users\markt\Documents\github\HB\bin\Debug\netcoreapp1.1\HB.dll
+C:\Users\markt\Documents\github\HB\bin\Debug\netcoreapp1.1\HB.pdb
+C:\Users\markt\Documents\github\HB\obj\Debug\netcoreapp1.1\HB.csprojResolveAssemblyReference.cache
+C:\Users\markt\Documents\github\HB\obj\Debug\netcoreapp1.1\HB.AssemblyInfo.cs
+C:\Users\markt\Documents\github\HB\obj\Debug\netcoreapp1.1\HB.dll
+C:\Users\markt\Documents\github\HB\obj\Debug\netcoreapp1.1\HB.pdb
