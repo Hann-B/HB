@@ -1,0 +1,8 @@
+C:\Users\Hanna\Documents\Visual Studio 2017\Projects\HB\HB\bin\Release\netcoreapp1.1\HB.deps.json
+C:\Users\Hanna\Documents\Visual Studio 2017\Projects\HB\HB\bin\Release\netcoreapp1.1\HB.runtimeconfig.json
+C:\Users\Hanna\Documents\Visual Studio 2017\Projects\HB\HB\bin\Release\netcoreapp1.1\HB.runtimeconfig.dev.json
+C:\Users\Hanna\Documents\Visual Studio 2017\Projects\HB\HB\bin\Release\netcoreapp1.1\HB.dll
+C:\Users\Hanna\Documents\Visual Studio 2017\Projects\HB\HB\bin\Release\netcoreapp1.1\HB.pdb
+C:\Users\Hanna\Documents\Visual Studio 2017\Projects\HB\HB\obj\Release\netcoreapp1.1\HB.AssemblyInfo.cs
+C:\Users\Hanna\Documents\Visual Studio 2017\Projects\HB\HB\obj\Release\netcoreapp1.1\HB.dll
+C:\Users\Hanna\Documents\Visual Studio 2017\Projects\HB\HB\obj\Release\netcoreapp1.1\HB.pdb

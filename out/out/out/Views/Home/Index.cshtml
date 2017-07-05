@@ -1,0 +1,333 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@using HB.Models
+@{
+    DateTime StartDate = new DateTime(2017, 3, 17);
+    var dateDiff = (DateTime.Now.Subtract(StartDate)).ToString("ddd");
+}
+
+
+<!-- page 1-->
+<section id="page1">
+    <div class="overlay"></div>
+    <div class="content">
+        <div class="container clearfix">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 col-sm-12">
+                    <p class="italic">Oh, hello, nice to meet you!</p>
+                    <h1>My name is Hanna.</h1>
+                    <p class="italic">I am a Back End Software Engineer.</p>
+                    <p class="italic">Passionate about learning and bringing innovation and wellness together.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="icon faa-float animated"><i class="fa fa-angle-double-down"></i></div>
+</section>
+<!-- page 2-->
+<section id="page2">
+    <div class="content">
+        <div class="container clearfix">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="heading">About me</h2>
+                    <p class="lead">Be so happy that when others look at you they become happy too!<p class="italic">--Yogi Bhajan</p>
+                    <p>Hello and welcome! I'm Hanna. I love bringing heads together, inventing solutions, and playing outside of the box.</p>
+                    <p>
+                        Currently, I am junior .NET software developer living in St. Petersburg, Florida.
+                        The programming avenue appealed to me because I was bored of living an unchallenging life as a waitress.
+                        @dateDiff days ago, I took a leap of faith. Today's anticipation of the future is thrilling.
+                    </p>
+                    <p>
+                        A history of B.S. (in Oceanography that is!) I am a loving daughter, sister, aunt, and dog momma with a passion to travel.
+                        Addicted to new experiences and betterment of myself, as well as the community. I hope to help inspire and advance technologies globally.
+                    </p>
+                </div>
+                <div class="col-md-5 col-md-offset-1">
+                    <p><img src="~/img/copenhagen.jpg" alt="" class="img-responsive img-circle"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- page 3 - class section-gray adds gray background-->
+<section id="page3" class="section-gray">
+    <div class="content">
+        <div class="container clearfix">
+            <div class="row services">
+                <div class="col-md-12">
+                    <h2 class="heading">Technical Skills</h2>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="box">
+                                <div class="icon"><i class="fa fa-desktop"></i></div>
+                                <h4 class="heading">Operating Systems</h4>
+                                <p>Microsoft Windows 10, Mac OS X, Apple iOS, Google Android.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="box">
+                                <div class="icon"><i class="fa fa-building-o"></i></div>
+                                <h4 class="heading">DevOps</h4>
+                                <p>Docker, GitHub, Swagger, Zeit, Visual Studios, Postman, Auth0, OAuth, MySQL, Gearhost. </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="box">
+                                <div class="icon"><i class="fa fa-language"></i></div>
+                                <h4 class="heading">Languages</h4>
+                                <p>C#, SQL, HTML, JavaScript, PHP, XML.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="box">
+                                <div class="icon"><i class="fa fa-wrench"></i></div>
+                                <h4 class="heading">Web Tools</h4>
+                                <p>ASP.NET, JSON, LINQ, AJAX, JQuery. </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="box">
+                                <div class="icon"><i class="fa fa-home"></i></div>
+                                <h4 class="heading">Frameworks</h4>
+                                <p>.NET Core, .NET, Entity Framework, NancyFx, Bootstrap, Powershell.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="box">
+                                <div class="icon"><i class="fa fa-user"></i></div>
+                                <h4 class="heading">UX &amp; UI</h4>
+                                <p>HTML/CSS, JavaScript, PHP, Slack.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="page4">
+    <div class="content">
+        <div class="container clearfix">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="heading">Portfolio</h2>
+                    <p class="text-center">If you would like to see more projects of mine, visit my <a href="https://github.com/Hann-B">GitHub</a>. </p>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="box hvrbox">
+                                <a href="https://grubtime.now.sh/swagger" target="_blank" title="GrubTime API">
+                                    <img src="~/img/grubtime.jpg" alt="" class="img-responsive" id="image">
+                                    <div class="hvrbox-layer_top">
+                                        <div class="hvrbox-text">GrubTime <p class="italic">API documentation</p><p class="italic">A Web Application used to search your area for restaurants near you and open for business.</p></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="box hvrbox">
+                                <a href="https://libraryapi.gear.host/swagger/ui/index" target="_blank">
+                                    <img src="~/img/library.jpg" alt="Online Library API" class="img-responsive" id="image">
+                                <div class="hvrbox-layer_top">
+                                    <div class="hvrbox-text">Online Library API<p class="italic">API documentation</p><p class="italic">Local library migrates to virtual database to improve store front efficiency.</p></div>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="box hvrbox">
+                                    <a href="https://www.codewars.com/users/Hann-B" target="_blank">
+                                        <img src="~/img/codewars.jpg" alt="" class="img-responsive" id="image">
+                                    <div class="hvrbox-layer_top">
+                                        <div class="hvrbox-text">Codewars.com<p class="italic">Kata Fun</p><p class="italic">Code kata practices, performed in various languages.</p></div>
+                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="box hvrbox">
+                                    <a href="https://retiysports.gear.host/" target="_blank">
+                                        <img src="~/img/sports.jpg" alt="" class="img-responsive" id="image">
+                                    <div class="hvrbox-layer_top">
+                                        <div class="hvrbox-text">TIY Sports<p class="italic">Design Replication</p><p class="italic">Using only Bootstrap components recreate a web application landing page from a screenshot of the site.</p></div>
+                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- page 5-->
+<section id="page5" class="section-gray">
+    <div class="content">
+        <div class="container clearfix">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="heading">Daily Dose</h2>
+                    <div class="row">
+                        <div class="container">
+                            <div class="row">
+                                <!--carousel-->
+                                <div class="col-md-8 col-md-offset-2">
+                                    <div class="tcb-quote-carousel">
+                                        <div class="quote"><i class=" fa fa-quote-left fa-4x"></i></div>
+                                        <div class="carousel slide carousel-fade" id="fade-quote-carousel" data-ride="carousel" data-interval="5000">
+                                            <!-- Carousel indicators -->
+                                            @*<ol class="carousel-indicators">
+                                                    <li data-target="#fade-quote-carousel" data-slide-to="0" class="active"></li>
+                                                    <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
+                                                </ol>*@
+                                            <!-- Carousel items -->
+                                            <div class="carousel-inner">
+                                                <div class="item active">
+                                                    <div class="profile-circle"><img class="img-responsive" src="~/img/jobs.jpg" alt="Steve Jobs"></div>
+                                                    <blockquote>
+                                                        <h4>Your time is limited, so don't waste it living someone else's life.</h4>
+                                                    </blockquote>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="profile-circle"><img class="img-responsive" src="~/img/teresa.jpg" alt="Mother Teresa"></div>
+                                                    <blockquote>
+                                                        <h4>Not all of us can do great things. But we can do small things with great love.</h4>
+                                                    </blockquote>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="profile-circle"><img class="img-responsive" src="~/img/gates.jpg" alt="Bill Gates"></div>
+                                                    <blockquote>
+                                                        <h4>It's fine to celebrate success, but it is more important to heed the lesson of failure.</h4>
+                                                    </blockquote>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="profile-circle"><img class="img-responsive" src="~/img/hepburn.jpg" alt="Audrey Hepburn"></div>
+                                                    <blockquote>
+                                                        <h4>Nothing is impossible, the word itself says 'I'm possible'!.</h4>
+                                                    </blockquote>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="profile-circle"><img class="img-responsive" src="~/img/einstein.jpg" alt="Albert Einstein"></div>
+                                                    <blockquote>
+                                                        <h4>A person who never made a mistake never tried anything new.</h4>
+                                                    </blockquote>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="profile-circle"><img class="img-responsive" src="~/img/lincoln.jpg" alt="Abraham Lincoln"></div>
+                                                    <blockquote>
+                                                        <h4>The best way to predict the future is to create it.</h4>
+                                                    </blockquote>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="profile-circle"><img class="img-responsive" src="~/img/branson.jpg" alt="Richard Branson"></div>
+                                                    <blockquote>
+                                                        <h4>Happiness is the secret ingredient for successful business. If you have a happy company it will be invincible.</h4>
+                                                    </blockquote>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="profile-circle"><img class="img-responsive" src="~/img/winfrey.jpg" alt="Oprah Winfrey"></div>
+                                                    <blockquote>
+                                                        <h4>Passion is energy. Feel the power that comes from focusing on what excites you.</h4>
+                                                    </blockquote>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="profile-circle"><img class="img-responsive" src="~/img/aristotle.jpg" alt="Aristotle"></div>
+                                                    <blockquote>
+                                                        <h4>Pleasure in the job puts perfection in the work.</h4>
+                                                    </blockquote>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="profile-circle"><img class="img-responsive" src="~/img/mandela.jpg" alt="Nelson Mandela"></div>
+                                                    <blockquote>
+                                                        <h4>Education is the most powerful weapon which you can use to change the world.</h4>
+                                                    </blockquote>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End carousel-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- page 6-->
+<section id="page6">
+    <div class="content">
+        <div class="container clearfix">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="heading">Contact</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <form id="contact-form" method="post" action="mailto:hlbernard124@gmail.com" @*url.action("contact","home")*@ enctype="text/plain" class="contact-form">
+                                <div class="controls">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="name">Your firstname *</label>
+                                                <input type="text" name="name" placeholder="Enter your firstname" required="required" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="surname">Your lastname *</label>
+                                                <input type="text" name="surname" placeholder="Enter your  lastname" required="required" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="surname">Your email *</label>
+                                        <input type="email" name="email" placeholder="Enter your  email" required="required" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="surname">Your message for me *</label>
+                                        <textarea rows="4" name="message" placeholder="Enter your message" required="required" class="form-control"></textarea>
+                                    </div>
+                                    <div class="text-center">
+                                        <input type="submit" name="name" value="Send message" class="btn btn-primary btn-block">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-6">
+                            <p>Thanks for stopping by!</p>
+                            <p>I invite you to connect with me regarding business, questions, or simply to talk shop!</p>
+                            <p class="social">
+                                @*<a href="#" title="" class="facebook"><i class="fa fa-facebook"></i></a>*@
+                                @*<a href="#" title="" class="twitter"><i class="fa fa-twitter"></i></a>*@
+                                @*<a href="#" title="" class="gplus"><i class="fa fa-google-plus"></i></a>*@
+                                <a href="https://github.com/Hann-B" target="_blank" title="GitHub" class="github"><i class="fa fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/hanna-bernard-457547142/" target="_blank" title="linkedin" class="linkedin"><i class="fa fa-linkedin-square"></i></a>
+                                <a href="slack://user?team=T03QUJQ7L&id=U5BH0MR7F" target="_blank" title="Slack" class="slack"><i class="fa fa-slack"></i></a>
+                                <a href="https://www.instagram.com/hanna.bernard/" target="_blank" title="Instagram" class="instagram"><i class="fa fa-instagram"></i></a>
+                                <a href="mailto:hlbernard124@gmail.com" target="_blank" title="Gmail" class="email"><i class="fa fa-envelope"></i></a>
+                                @*<a href="https://docs.google.com/document/d/1J682Ygebu6tjctihBppOVQfLfJ15w-cx8Kl3Yt2N6Ic/edit?usp=sharing" target="_blank" title="Resume" class="slack"><i class="fa fa-paperclip"></i></a>*@
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row copyright">
+                        <div class="col-md-6">
+                            <p>&copy;2017 Hanna Bernard</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="credit">Code by <a href="https://bootstrapious.com/portfolio-themes">Bootstrapious</a></p>
+                            <!-- Not removing these links is part of the license conditions of the template. Thanks for understanding :) If you want to use the template without the attribution links, you can do so after supporting further themes development at https://bootstrapious.com/donate  -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    </div>
+</div>
