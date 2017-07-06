@@ -122,7 +122,8 @@
                                 <a href="https://grubtime.now.sh/swagger" target="_blank" title="GrubTime API">
                                     <img src="~/img/grubtime.jpg" alt="" class="img-responsive" id="image">
                                     <div class="hvrbox-layer_top">
-                                        <div class="hvrbox-text">GrubTime <p class="italic">API documentation</p><p class="italic">A Web Application used to search your area for restaurants near you and open for business.</p></div>
+                                        <div class="hvrbox-text">GrubTime <p class="italic">API documentation</p><p class="italic">A Web Application used to search your area for restaurants near you and open for business.</p>
+                                        @*<p class="italic">Build Summary: .NET Core, ASP.NET Web API, OAuth, C#, MySQL</p>*@</div>
                                     </div>
                                 </a>
                             </div>
@@ -131,9 +132,9 @@
                             <div class="box hvrbox">
                                 <a href="https://libraryapi.gear.host/swagger/ui/index" target="_blank">
                                     <img src="~/img/library.jpg" alt="Online Library API" class="img-responsive" id="image">
-                                <div class="hvrbox-layer_top">
-                                    <div class="hvrbox-text">Online Library API<p class="italic">API documentation</p><p class="italic">Local library migrates to virtual database to improve store front efficiency.</p></div>
-                                </div>
+                                    <div class="hvrbox-layer_top">
+                                        <div class="hvrbox-text">Online Library API<p class="italic">API documentation</p><p class="italic">Local library migrates to virtual database to improve store front efficiency.</p></div>
+                                    </div>
                                 </a>
                             </div>
                         </div>
@@ -142,9 +143,9 @@
                                 <div class="box hvrbox">
                                     <a href="https://www.codewars.com/users/Hann-B" target="_blank">
                                         <img src="~/img/codewars.jpg" alt="" class="img-responsive" id="image">
-                                    <div class="hvrbox-layer_top">
-                                        <div class="hvrbox-text">Codewars.com<p class="italic">Kata Fun</p><p class="italic">Code kata practices, performed in various languages.</p></div>
-                                    </div>
+                                        <div class="hvrbox-layer_top">
+                                            <div class="hvrbox-text">Codewars.com<p class="italic">Kata Fun</p><p class="italic">Code kata practices, performed in various languages.</p></div>
+                                        </div>
                                     </a>
                                 </div>
                             </div>
@@ -152,14 +153,15 @@
                                 <div class="box hvrbox">
                                     <a href="https://retiysports.gear.host/" target="_blank">
                                         <img src="~/img/sports.jpg" alt="" class="img-responsive" id="image">
-                                    <div class="hvrbox-layer_top">
-                                        <div class="hvrbox-text">TIY Sports<p class="italic">Design Replication</p><p class="italic">Using only Bootstrap components recreate a web application landing page from a screenshot of the site.</p></div>
-                                    </div>
+                                        <div class="hvrbox-layer_top">
+                                            <div class="hvrbox-text">TIY Sports<p class="italic">Design Replication</p><p class="italic">Using only Bootstrap components recreate a web application landing page from a screenshot of the site.</p></div>
+                                        </div>
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <p class="text-center">If you would like to view my resume, click <a href="@Url.Action("Resume", "Home")" target="_blank">here</a>. </p>
                 </div>
             </div>
         </div>
@@ -268,37 +270,10 @@
                 <div class="col-md-12">
                     <h2 class="heading">Contact</h2>
                     <div class="row">
-                        <div class="col-md-6">
-                            <form id="contact-form" method="post" action="mailto:hlbernard124@gmail.com" @*url.action("contact","home")*@ enctype="text/plain" class="contact-form">
-                                <div class="controls">
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label for="name">Your firstname *</label>
-                                                <input type="text" name="name" placeholder="Enter your firstname" required="required" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label for="surname">Your lastname *</label>
-                                                <input type="text" name="surname" placeholder="Enter your  lastname" required="required" class="form-control">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="surname">Your email *</label>
-                                        <input type="email" name="email" placeholder="Enter your  email" required="required" class="form-control">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="surname">Your message for me *</label>
-                                        <textarea rows="4" name="message" placeholder="Enter your message" required="required" class="form-control"></textarea>
-                                    </div>
-                                    <div class="text-center">
-                                        <input type="submit" name="name" value="Send message" class="btn btn-primary btn-block">
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
+                        @model HB.Models.MailViewModel
+                        @*<div class="col-md-6">
+                            @await Html.PartialAsync("~/Views/Shared/_Email.cshtml", Model)
+                        </div>*@
                         <div class="col-md-6">
                             <p>Thanks for stopping by!</p>
                             <p>I invite you to connect with me regarding business, questions, or simply to talk shop!</p>
@@ -329,5 +304,3 @@
         </div>
     </div>
 </section>
-    </div>
-</div>

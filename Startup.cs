@@ -7,8 +7,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using HB.Services;
-using static HB.Services.MessageServices;
+using HB.Models;
+using static HB.Models.Email;
+using static HB.Controllers.HomeController;
 
 namespace HB
 {
@@ -29,7 +30,11 @@ namespace HB
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddTransient<IEmailSender, AuthMessageSender>();
+            //Read email settings
+            var settings = Configuration.GetSection("Email:FromName");
+            services.Configure<EmailConfig>(Configuration.GetSection("Email"));
+            // Register email service 
+            services.AddTransient<IEmailService, EmailService>();
             // Add framework services.
             services.AddMvc();
         }
