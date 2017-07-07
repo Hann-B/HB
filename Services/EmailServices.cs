@@ -17,22 +17,22 @@ namespace HB.Services
         {
             private readonly EmailConfig ec;
 
-            //public EmailService(IOptions<EmailConfig> emailConfig)
-            //{
-            //    this.ec = new EmailConfig
-            //    {
-            //        FromName = "Hanna",
-            //        FromAddress = "hlbernard124@gmail.com",
+            public EmailService(IOptions<EmailConfig> emailConfig)
+            {
+                this.ec = new EmailConfig
+                {
+                    FromName = "Hanna",
+                    FromAddress = "hlbernard124@gmail.com",
 
-            //        LocalDomain = "hann.life",
+                    LocalDomain = "hann.life",
 
-            //        MailServerAddress = "in-v3.mailjet.com",
-            //        MailServerPort = "587",
+                    MailServerAddress = "in-v3.mailjet.com",
+                    MailServerPort = "587",
 
-            //        UserId = "7c56da0c21b0ff111d8a0a9862fab920",
-            //        UserPassword = "4470d916b1413025e444d1beb03baf8b"
-            //    };
-            //}
+                    UserId = "7c56da0c21b0ff111d8a0a9862fab920",
+                    UserPassword = "4470d916b1413025e444d1beb03baf8b"
+                };
+            }
 
             public async Task SendEmailAsync(String email, String subject, String message)
             {
