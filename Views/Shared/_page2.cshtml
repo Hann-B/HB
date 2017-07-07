@@ -1,0 +1,30 @@
+﻿@using HB.Models
+@{
+    DateTime StartDate = new DateTime(2017, 3, 17);
+    var dateDiff = (DateTime.Now.Subtract(StartDate)).ToString("ddd");
+}
+<section id="page2">
+    <div class="content">
+        <div class="container clearfix">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="heading">About me</h2>
+                    <p class="lead">Be so happy that when others look at you they become happy too!<p class="italic">--Yogi Bhajan</p>
+                    <p>Hello and welcome! I'm Hanna. I love bringing heads together, inventing solutions, and playing outside of the box.</p>
+                    <p>
+                        Currently, I am a .NET software developer living in St. Petersburg, Florida.
+                        The programming avenue appealed to me because I was bored of living an unchallenging life as a waitress.
+                        @dateDiff days ago, I took a leap of faith. Today's anticipation of the future is thrilling.
+                    </p>
+                    <p>
+                        A history of B.S. (in Oceanography that is!) I am a loving daughter, sister, aunt, and dog momma with a passion to travel.
+                        Addicted to new experiences and betterment of myself, as well as the community. I hope to help inspire and advance technologies globally.
+                    </p>
+                </div>
+                <div class="col-md-5 col-md-offset-1">
+                    <p><img src="~/img/copenhagen.JPG" alt="Copenhagen Mermaid" class="img-responsive img-circle"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

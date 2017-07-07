@@ -10,6 +10,8 @@ using Microsoft.Extensions.Logging;
 using HB.Models;
 using static HB.Models.Email;
 using static HB.Controllers.HomeController;
+using static HB.Services.IEmailServices;
+using static HB.Services.EmailServices;
 
 namespace HB
 {
