@@ -14,7 +14,7 @@ namespace HB.Controllers
             _emailService = emailService;
         }
 
-        [HttpPost()]
+        [HttpPost]
         public async Task<IActionResult> Email(MailViewModel model)
         {
             if (ModelState.IsValid)

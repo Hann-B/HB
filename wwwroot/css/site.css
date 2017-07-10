@@ -35,3 +35,9 @@ textarea {
         display: none;
     }
 }
+
+@media screen and (max-width: 1000px){
+    a .fa-angle-double-down {
+        display: none;
+    }
+}
